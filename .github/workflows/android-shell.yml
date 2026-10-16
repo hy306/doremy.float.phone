@@ -21,6 +21,9 @@ jobs:
       SHELL_KEY_ALIAS: ${{ secrets.SHELL_KEY_ALIAS }}
       SHELL_KEY_PASSWORD: ${{ secrets.SHELL_KEY_PASSWORD }}
       SHELL_SITE_URL: ${{ inputs.site_url || vars.SHELL_SITE_URL }}
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+      NEXT_PUBLIC_SELF_HOSTED_MODE: ${{ secrets.NEXT_PUBLIC_SELF_HOSTED_MODE }}
     steps:
       - uses: actions/checkout@v4
 
